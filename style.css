@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    height: 100vh;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-image: url('src/bg.png');
+    background-size: cover;
+}
+
+ /* CAKE PLACE ===========*/
+#home{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cake_place {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    border: 3px dotted rgb(231, 190, 204);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10px 50px 10px;
+    position: relative;
+}
+
+#decor_list {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+  /* LOWER PART WITH OPTIONS ====================*/
+nav{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #8A275C;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.nav_button{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8A275C;
+    width: 20%;
+    border: none;
+    padding: 5px;
+    height: 65px;
+}
+
+.fa-cake{
+    background-image: url('src/i-50.png');
+}
+
+.fa-spatula{
+    background-image: url('src/i-spatula-50.png');
+}
+
+.fa-candy{
+    background-image: url('src/i-lollipop-50.png');
+}
+
+.fa-save{
+    background-image: url('src/i-save-thin-50.png');
+}
+
+.fa-refresh{
+    background-image: url('src/i-refresh-50.png');
+}
+
+i{ 
+    width: 50px;
+    height: 50px;
+    color:  #F3E6ED;
+}
+
+.nav_button:hover{
+    background-color: rgb(90, 14, 54);
+    cursor: pointer;
+}
+
+.nav_button:active{
+    background-color: rgb(90, 14, 54);
+    border: none;
+}
+
+#options{
+    overflow: auto;
+    overflow-x: hidden;
+    height: 50%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 3vh;
+    padding: 15px 0px 70px 15px; 
+    text-align: start;
+}
+
+.headline{
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 98%;
+  }
+  
+.group > input {
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    width: 97%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+.group > input:focus {
+    outline: none;
+}
+  /* LABEL ======================================= */
+  .size {
+    color: #999;
+    font-size: 14px;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+  
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    padding-top: 0px;
+    top: -13px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+
+button{
+    background-color: #8A275C;
+    color: #F3E6ED;
+    width: 46.5%;
+    height: 6vh;
+    margin: 1px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.b_line{
+    width: 92%;
+    display: flex;
+    justify-content: space-around;
+}
+
+select{
+    background-color: #8A275C;
+    color: #F3E6ED;
+    height: 6vh;
+    margin: 1px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color{
+    width: 300%;
+    display: flex;
+    position: relative;
+
+}
+
+.inner{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#decor_list{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+#decor_list > li{
+  margin: 3%;
+    
+}
+
+.destroy{
+    width: 25px;
+    border-radius: 30%;
+}
+
+.item_decor{
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.ButDel{
+    position: relative;
+    background: #f3e6ed00;
+    color: #5a1d3d;
+    font-size: 10px;
+    height: 5px;
+    text-align: start;
+}
+
+/* COVERING ============================*/
+
+.cream, .fondant, .icing, .velour{
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+  
+/* CREAM ================================ */
+.cream{
+    background-image: linear-gradient(to bottom, 
+    rgba(255, 255, 255, 0),  #b6b6b67c, 
+    rgba(255, 255, 255, 0),  #b6b6b67c, 
+    rgba(255, 255, 255, 0), #b6b6b67c, 
+    rgba(255, 255, 255, 0), #b6b6b67c, 
+    rgba(255, 255, 255, 0), #b6b6b67c, 
+    rgba(255, 255, 255, 0), #b6b6b67c, 
+    rgba(255, 255, 255, 0));
+    background-blend-mode: soft-light;
+
+}
+
+.icing{
+    background-image: url('src/bubble.png');
+    background-size: cover;
+    width: 50%;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 25%;
+}
+
+.fondant{
+    opacity: .5;
+    border: 1px solid #88888888;
+}
+
+.velour{
+    background-image: url('src/grainyBG.png');
+    background-size: cover;
+    width: 50%;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 25%;
+}
+
+#basket {
+    border: 2px dotted black;
+    background: #FFEFD5;
+    display: none;
+    padding: 0 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#basket p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+    #wrapper{
+        width: 50%;
+        border: 1px solid #8A275C;
+    }
+    nav{
+        width: 50%;
+        margin: auto;
+    }
+}

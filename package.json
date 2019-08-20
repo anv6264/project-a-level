@@ -1,0 +1,35 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "description": "1.  Сделать меню.\r 2.  Сделать основной блок.\r 3.  Определиться как из компонентов сделать необходимый торт.\r 4.  Придумать каким образом будет происходить изменение параметров, выбранных пользователем.\r 5.  Сделать палитру.\r 6.  Придумать как привязать палитру к элементам.\r 7.  Определиться как добавлять/удалять элементы.\r 8.  Придумать как будет происходить изменение размера пользователем и перемещение элементов декора по макету.\r 9.  Придумать, как добавлять картинки (ссылки на них) пользователя.\r 10.  Придумать, как обрезать картинку по основному содержанию для пряников и фигурок.\r 11.  Найти картинки для стандартных элементов, чтобы можно было менять их цвета.\r 12. Как сохранить результат",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && parcel build ./index.html --public-url /project-a-level",
+    "deploy": "cp ./dist/index.html ./dist/404.html && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-sw-precache": "^1.1.1"
+  },
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-draggable": "^3.3.0",
+    "react-router-dom": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orenchuck/project-a-level.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orenchuck/project-a-level/issues"
+  },
+  "homepage": "https://github.com/Orenchuck/project-a-level#readme"
+}
