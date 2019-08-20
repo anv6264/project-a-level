@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Orenchuck/project-a-level.git"
+    "url": "git+https://github.com/anv6264/project-a-level.git"
   },
   "bugs": {
-    "url": "https://github.com/Orenchuck/project-a-level/issues"
+    "url": "https://github.com/anv6264/project-a-level/issues"
   },
-  "homepage": "https://github.com/Orenchuck/project-a-level#readme"
+  "homepage": "https://github.com/anv6264/project-a-level#readme"
 }
